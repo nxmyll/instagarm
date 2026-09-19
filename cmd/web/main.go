@@ -13,13 +13,13 @@ import (
 	"insta/pkg/render"
 )
 
-const portNumber = ":8080" // change later to 80
+const portNumber = ":80" // change later to 80
 
 var app config.AppConfig
 var session *scs.SessionManager
 
 func main() {
-	app.InProduction = false // turn true later
+	app.InProduction = true // turn true later
 
 	session = scs.New()
     session.Lifetime = 24 * time.Hour
@@ -35,7 +35,7 @@ func main() {
 	}
 
 	app.TemplateCache = tc
-	app.UseCache = false // turn true later
+	app.UseCache = true // turn true later
 
 	repo := handler.NewRepo(&app)
 	handler.NewHandlers(repo)
