@@ -16,6 +16,7 @@ func routes(app *config.AppConfig) http.Handler {
 
 	//middleware
 	mux.Use(middleware.Logger)
+	mux.Use(middleware.Recoverer)
 
 	mux.Use(cors.Handler(cors.Options{
 		AllowedMethods: []string{"GET", "POST", "OPTIONS"},
