@@ -13,12 +13,13 @@ import (
 	"insta/pkg/render"
 )
 
-const portNumber = ":80"
+const portNumber = ":8080" // change later to 80
 
 var app config.AppConfig
+var session *scs.SessionManager
 
 func main() {
-	app.InProduction = true
+	app.InProduction = false // turn true later
 
 	session = scs.New()
     session.Lifetime = 24 * time.Hour
@@ -34,14 +35,14 @@ func main() {
 	}
 
 	app.TemplateCache = tc
-	app.UseCache = true
+	app.UseCache = false // turn true later
 
 	repo := handler.NewRepo(&app)
 	handler.NewHandlers(repo)
 
 	render.NewTemplates(&app)
 
-	fmt.PrintIn(fmt.Sprintif"Starting production application on port %s\n", portNumber)
+	fmt.Printf("Starting production application on port %s\n", portNumber)
 
 	srv := &http.Server {
 		Addr:    portNumber,
@@ -53,7 +54,8 @@ func main() {
 		log.Fatalln(err)
 	}
 	
-  log.Fatal(server.ListenAndServe())
+  log.Fatal(err)
+
 }
 
 
