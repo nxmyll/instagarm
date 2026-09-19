@@ -51,10 +51,8 @@ func main() {
   
   err = srv.ListenAndServe()
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatal(err)
 	}
-	
-  log.Fatal(err)
 
 }
 
