@@ -1,3 +1,5 @@
+Go
+
 package main
 
 import (
