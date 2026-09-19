@@ -13,7 +13,7 @@
   .lg-page * { box-sizing: border-box; }
   .lg-lang { color: #65676b; font-size: 15px; margin-top: 10px; }
   .lg-logo { margin: 50px 0; }
-  .lg-logo img { width: 175px; max-width: 100%; }
+  .lg-logo img { width: 90px; max-width: 100%; }
   .lg-form {
     width: 100%;
     max-width: 400px;
