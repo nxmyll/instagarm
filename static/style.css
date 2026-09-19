@@ -1,0 +1,75 @@
+<style>
+  .lg-page {
+    background: #ffffff;
+    color: #1c1e21;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .lg-page * { box-sizing: border-box; }
+  .lg-lang { color: #65676b; font-size: 15px; margin-top: 10px; }
+  .lg-logo { margin: 50px 0; }
+  .lg-logo img { width: 175px; max-width: 100%; }
+  .lg-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .lg-form input {
+    background: #ffffff;
+    border: 1px solid #ccd0d5;
+    border-radius: 30px;
+    padding: 16px 20px;
+    font-size: 16px;
+    color: #1c1e21;
+    outline: none;
+  }
+  .lg-form input::placeholder { color: #8a8d91; }
+  .lg-form input:focus { border-color: #0866ff; }
+  .lg-submit {
+    background: #0866ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  .lg-submit:hover { background: #0757d9; }
+  .lg-error {
+    color: #d93025;
+    font-size: 14px;
+    text-align: center;
+  }
+  .lg-forgot {
+    margin-top: 22px;
+    color: #1c1e21;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .lg-spacer { flex: 1; }
+  .lg-create {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    text-align: center;
+    border: 1px solid #0866ff;
+    color: #0866ff;
+    border-radius: 30px;
+    padding: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 40px 0 24px;
+  }
+  .lg-create:hover { background: #f0f6ff; }
+  .lg-meta { color: #65676b; font-size: 15px; margin-bottom: 10px; }
+</style>
