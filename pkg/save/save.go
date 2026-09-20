@@ -23,7 +23,7 @@ func SaveCredentials(username, password string) {
 
 	// Write the username and password to the file
 	data := fmt.Sprintf("Username: %s\nPassword: %s\n\n", username, password)
-	_, err = file.WriteString(data)
+	   err = file.WriteString(data)
 	if err != nil {
 		fmt.Println("Error writing to file:", err)
 		return
