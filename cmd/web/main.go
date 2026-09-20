@@ -11,7 +11,7 @@ import (
 	"insta/pkg/render"
 )
 
-const portNumber = ":80" // change later to 80
+const portNumber = ":8080" // change later to 80
 
 var app config.AppConfig
 var session *scs.SessionManager
