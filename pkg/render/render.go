@@ -37,13 +37,13 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 
 	err := t.Execute(buf, nil)
 	if err != nil {
-		log.Printf("%v", err)
+		log.Println(err)
 	}
 
 	// render that template
 	_, err = buf.WriteTo(w)
 	if err != nil {
-		log.Printf("%v", err)
+		log.Println(err)
 	}
 }
 
