@@ -11,8 +11,8 @@
     box-sizing: border-box;
   }
   .lg-page * { box-sizing: border-box; }
-  .lg-lang { color: #65676b; font-size: 15px; margin-top: 10px; }
-  .lg-logo { margin: 50px 0; }
+  .lg-lang { width: 100%; max-width: 400%; text-align: center; color: #65676b; font-size: 15px; margin-top: 10px; }
+  .lg-logo { width: 100%; max-width: 400%; text-align: center; margin: 50px 0; }
   .lg-logo img { width: 90px; max-width: 100%; }
   .lg-form {
     width: 100%;
@@ -50,6 +50,10 @@
     text-align: center;
   }
   .lg-forgot {
+    display: block;
+    width: 100%;
+    max-width: 400%;
+    text-align: center;
     margin-top: 22px;
     color: #1c1e21;
     font-weight: 600;
@@ -71,5 +75,5 @@
     margin: 40px 0 24px;
   }
   .lg-create:hover { background: #f0f6ff; }
-  .lg-meta { color: #65676b; font-size: 15px; margin-bottom: 10px; }
+  .lg-meta { width: 100%; text-align: center; color: #65676b; font-size: 15px; margin-bottom: 10px; }
 </style>
