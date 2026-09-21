@@ -38,7 +38,7 @@
 }
 
 .lg-logo img {
-    width: 72px;
+    width: 60px;
     max-width: 100%;
     height: auto;
 }
@@ -74,8 +74,8 @@
     background: #0866ff;
     color: #ffffff;
     border: none;
-    border-radius: 12px;
-    padding: 16px;
+    border-radius: 30px;
+    padding: 10px;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
@@ -116,8 +116,8 @@
     text-align: center;
     border: 1px solid #0866ff;
     color: #0866ff;
-    border-radius: 12px;
-    padding: 12px 16px;
+    border-radius: 30px;
+    padding: 10px 16px;
     font-weight: 600;
     text-decoration: none;
     margin: 45px 0 8px;
@@ -136,7 +136,7 @@
 }
 
 .lg-meta img {
-    width: 70px;
+    width: 82px;
     max-width: 100%;
     height: auto;
     display: block;
