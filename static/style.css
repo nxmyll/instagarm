@@ -50,7 +50,7 @@
     flex-direction: column;
     gap: 16px;
     position: relative;
-    transform: translateY(30px);
+    transform: translateY(45px);
 }
 
 .lg-form input {
@@ -80,7 +80,7 @@
     border-radius: 30px;
     padding: 10px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 500px;
     cursor: pointer;
     margin-top: 8px;
 }
@@ -102,11 +102,11 @@
     text-align: center;
     margin-top: 22px;
     color: #1c1e21;
-    font-weight: 500px;
+    font-weight: 550px;
     font-size: 15px;
     text-decoration: none;
     position: relative;
-    transform: translateY(30px);
+    transform: translateY(45px);
 }
 
 .lg-spacer {
