@@ -50,7 +50,7 @@
     flex-direction: column;
     gap: 16px;
     position: relative;
-    top: 20px
+    top: 40;
 }
 
 .lg-form input {
@@ -106,7 +106,7 @@
     font-size: 15px;
     text-decoration: none;
     position: relative;
-    top: 20px;
+    top: 40;
 }
 
 .lg-spacer {
