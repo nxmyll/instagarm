@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 20px 16px;
+    padding: 16px 12px;
     box-sizing: border-box;
 }
 
@@ -46,19 +46,19 @@
 
 .lg-form {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
 .lg-form input {
     width: 100%;
     background: #ffffff;
     border: 1px solid #ccd0d5;
-    border-radius: 30px;
-    padding: 16px 20px;
-    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 14px;
     color: #1c1e21;
     outline: none;
 }
@@ -75,12 +75,12 @@
     background: #0866ff;
     color: #ffffff;
     border: none;
-    border-radius: 30px;
-    padding: 16px;
-    font-size: 17px;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .lg-submit:hover {
