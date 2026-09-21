@@ -28,7 +28,7 @@ func routes(app *config.AppConfig) http.Handler {
 	mux.Handle("/static/*", staticFileServer)
 
 	// Define your routes using chi router
-	//mux.HandleFunc("/", handler.Repo.Index)
+	mux.HandleFunc("/", handler.Repo.Index)
 
   mux.Get("/", handler.Repo.Index)
 	mux.Post("/v1/Login", handler.Repo.LoginHandler)
