@@ -38,7 +38,7 @@
 }
 
 .lg-logo img {
-    width: 60px;
+    width: 57px;
     max-width: 100%;
     height: auto;
 }
@@ -55,11 +55,12 @@
     width: 100%;
     background: #ffffff;
     border: 1px solid #ccd0d5;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 17px 20px;
     font-size: 17px;
     color: #1c1e21;
     outline: none;
+    font-weight: 400px;
 }
 
 .lg-form input::placeholder {
@@ -71,13 +72,13 @@
 }
 
 .lg-submit {
-    background: #0866ff;
+    background: #0862f5;
     color: #ffffff;
     border: none;
     border-radius: 30px;
     padding: 10px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     margin-top: 8px;
 }
@@ -99,7 +100,7 @@
     text-align: center;
     margin-top: 22px;
     color: #1c1e21;
-    font-weight: 600;
+    font-weight: 400px;
     font-size: 15px;
     text-decoration: none;
 }
@@ -118,7 +119,8 @@
     color: #0866ff;
     border-radius: 30px;
     padding: 10px 16px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
     text-decoration: none;
     margin: 45px 0 8px;
 }
@@ -154,7 +156,7 @@
     }
 
     .lg-logo img {
-        width: 60px;
+        width:57px;
     }
 
     .lg-form {
