@@ -78,7 +78,7 @@
     color: #ffffff;
     border: none;
     border-radius: 30px;
-    padding: 10px;
+    padding: 13px;
     font-size: 15px;
     font-weight: 500px;
     cursor: pointer;
@@ -86,7 +86,7 @@
 }
 
 .lg-submit:hover {
-    background: #0757d9;
+    background: #000000;
 }
 
 .lg-error {
@@ -102,7 +102,7 @@
     text-align: center;
     margin-top: 22px;
     color: #1c1e21;
-    font-weight: 550px;
+    font-weight: 650px;
     font-size: 15px;
     text-decoration: none;
     position: relative;
@@ -142,7 +142,7 @@
 }
 
 .lg-meta img {
-    width: 82px;
+    width: 88px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -168,17 +168,17 @@
     }
 
     .lg-form input {
-        padding: 17px 20px;
-        font-size: 17px;
+        padding: 19px 20px;
+        font-size: 15px;
     }
 
     .lg-create {
         max-width: 100%;
-        padding: 10px 16px;
+        padding: 12px 16px;
         margin: 45px 0 8px;
     }
 
     .lg-meta img {
-        width: 82px;
+        width: 88px;
     }
 }
