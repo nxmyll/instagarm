@@ -27,7 +27,8 @@
     text-align: center;
     color: #65676b;
     font-size: 15px;
-    margin-top: 0px;;
+    margin-top: 0px;
+    outline: 1px solid red;
 }
 
 .lg-logo {
@@ -35,6 +36,7 @@
     max-width: 400px;
     text-align: center;
     margin: 65px 0 70px;
+    outline: 1px solid blue;
 }
 
 .lg-logo img {
@@ -51,6 +53,7 @@
     gap: 16px;
     position: relative;
     transform: translateY(45px);
+    outline: 1px solid green;
 }
 
 .lg-form input {
