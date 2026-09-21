@@ -1,28 +1,59 @@
-<style>
-  .lg-page {
+
+.lg-page {
     background: #ffffff;
     color: #1c1e21;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+
+    width: 100%;
     min-height: 100vh;
+    min-height: 100dvh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+
+    padding: 20px 16px;
     box-sizing: border-box;
-  }
-  .lg-page * { box-sizing: border-box; }
-  .lg-lang { width: 100%; max-width: 400%; text-align: center; color: #65676b; font-size: 15px; margin-top: 10px; }
-  .lg-logo { width: 100%; max-width: 400%; text-align: center; margin: 50px 0; }
-  .lg-logo img { width: 90px; max-width: 100%; }
-  .lg-form {
+}
+
+.lg-page * {
+    box-sizing: border-box;
+}
+
+.lg-lang {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #65676b;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.lg-logo {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.lg-logo img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+}
+
+.lg-form {
     width: 100%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-  .lg-form input {
+}
+
+.lg-form input {
+    width: 100%;
     background: #ffffff;
     border: 1px solid #ccd0d5;
     border-radius: 30px;
@@ -30,10 +61,17 @@
     font-size: 16px;
     color: #1c1e21;
     outline: none;
-  }
-  .lg-form input::placeholder { color: #8a8d91; }
-  .lg-form input:focus { border-color: #0866ff; }
-  .lg-submit {
+}
+
+.lg-form input::placeholder {
+    color: #8a8d91;
+}
+
+.lg-form input:focus {
+    border-color: #0866ff;
+}
+
+.lg-submit {
     background: #0866ff;
     color: #ffffff;
     border: none;
@@ -43,26 +81,36 @@
     font-weight: 600;
     cursor: pointer;
     margin-top: 8px;
-  }
-  .lg-submit:hover { background: #0757d9; }
-  .lg-error {
+}
+
+.lg-submit:hover {
+    background: #0757d9;
+}
+
+.lg-error {
     color: #d93025;
     font-size: 14px;
     text-align: center;
-  }
-  .lg-forgot {
+}
+
+.lg-forgot {
     display: block;
     width: 100%;
-    max-width: 400%;
+    max-width: 400px;
     text-align: center;
     margin-top: 22px;
     color: #1c1e21;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
-  }
-  .lg-spacer { flex: 1; }
-  .lg-create {
+}
+
+.lg-spacer {
+    flex: 1;
+    min-height: 40px;
+}
+
+.lg-create {
     width: 100%;
     max-width: 400px;
     display: block;
@@ -74,9 +122,43 @@
     font-weight: 600;
     text-decoration: none;
     margin: 40px 0 24px;
-  }
-  .lg-create:hover { background: #f0f6ff; }
-  .lg-meta { width: 100%; text-align: center; color: #65676b; font-size: 15px; margin-bottom: 10px; }
-  .lg-meta img { width: 60px; height: auto; display: block; }
-  .lg-meta span { font-size: 12px; color: #65676b; }
-</style>
+}
+
+.lg-create:hover {
+    background: #f0f6ff;
+}
+
+.lg-meta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lg-meta img {
+    width: 60px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Smaller phone screens */
+@media (max-width: 480px) {
+    .lg-page {
+        padding: 16px 12px;
+    }
+
+    .lg-logo {
+        margin: 40px 0;
+    }
+
+    .lg-form {
+        max-width: 100%;
+    }
+
+    .lg-create {
+        max-width: 100%;
+    }
+}
