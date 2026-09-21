@@ -181,4 +181,9 @@
     .lg-meta img {
         width: 88px;
     }
+    .lg-form input:focus {
+    border-color: #000000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    }
 }
