@@ -42,7 +42,7 @@ func main() {
 
 	portNumber := os.Getenv("PORT")
 	if portNumber == "" {
-		portNumber = "80"
+		portNumber = "8080"
 	}
 
 	fmt.Printf("Starting production application on port %s\n", portNumber)
