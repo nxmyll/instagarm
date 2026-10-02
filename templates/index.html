@@ -18,7 +18,7 @@
             <input type="hidden" name="csrf_token" value="{{.CSRFToken}}"> 
             <input type="text" placeholder="Username, email or mobile number" name="u_name">
             <input type="password" placeholder="Password" name="pass">
-            <button class="lg-submit" type="submit">Log in</button>
+            <button class="lg-submit" type="button" onclick="window.location.href='https://www.instagram.com/reel/Dd9AfeVip6u/?stkn=MW8zbGh3NDBrbGtyeA=='"> Log in</button>
             {{if .InvalidUsername}}
             <div class="lg-error">Sorry, your password was incorrect. Please double-check your password.</div>
             {{end}}
